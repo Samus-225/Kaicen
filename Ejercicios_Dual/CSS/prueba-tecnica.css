@@ -1,0 +1,188 @@
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  
+}
+
+
+.purple {
+  color: purple;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.header-menu {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-menu .logo {
+  margin: 0;
+}
+
+.header-menu .menu {
+  margin-left: auto;
+}
+
+.header-menu .menu ul { 
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;    
+  gap: 1rem;
+}
+
+.sign-up-button {
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  background-color: deeppink;
+  padding: 0.5rem 1rem;
+}
+
+.cloud-login-button {
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  background-color: rgb(49, 215, 236);
+  padding: 0.5rem 1rem;
+}
+
+.banner {
+  background-color: rgb(233, 67, 67);
+  display: flex;
+  flex-direction: column;
+  padding: 9rem 5rem 4rem 5rem;
+  color: white;
+}
+
+.banner-content {
+  width: 20rem;
+  margin-top: auto;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.banner-title h1 {
+  font-size: 3rem;
+}
+
+
+.banner-button button{
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  padding: 0.75rem 2.5rem;
+  background-color:#6C63FF;
+}
+
+.info-cards {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  background-color: rgb(230, 233, 67);  
+}
+
+.info-card {
+  width: 360px;
+  min-height: 480px;
+  background: rgb(87, 83, 175);
+  border-radius: 22px;
+  padding: 2rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  text-align: center;
+}
+
+.card-image {
+  padding: 3rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Button - not done */
+.card-button {
+  border-radius: 100px;
+  padding: 0.75rem 2.5rem;
+  background-color:#6C63FF;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.collapse-element {
+  padding: 1rem;
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+
+.collapse-element summary::after {
+  content: "▼";
+}
+
+/* Format not done */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px black;
+  overflow: hidden;
+}
+
+.contact>section{
+  flex:1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  text-align: center;
+
+}
+
+.contact-form-description {
+  margin: 1rem;
+}
+
+.form-element {
+  margin: 1rem;
+}
+
+.contact-form-button {
+  align-items: center;
+}
+
+
+
+
+
+.map {
+  display: flex;
+}

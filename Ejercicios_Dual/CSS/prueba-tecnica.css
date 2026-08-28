@@ -2,6 +2,9 @@
 
 ul {
   list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 a {
@@ -109,6 +112,8 @@ button {
   justify-content: flex-start;
   color: white;
   text-align: center;
+  position: relative;   /* punto de referencia para el botón absoluto */
+  overflow: hidden;      /* recorta el botón que sobresale por abajo */
 }
 
 .card-image {
@@ -119,11 +124,28 @@ button {
   margin-bottom: 1.5rem;
 }
 
-/* Card Button - not done */
 .card-button {
-  border-radius: 100px;
-  padding: 0.75rem 2.5rem;
-  background-color:#6C63FF;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: deeppink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, 50%);
+  /* translateX(-50%) centra el círculo horizontalmente en la tarjeta */
+  /* translateY(50%) baja el círculo la mitad de su propia altura,   */
+  /* así su centro queda sobre el borde inferior de la tarjeta       */
+}
+
+.card-button svg {
+  transform: translateY(-50%);
+  /* como solo se ve la mitad superior del círculo,       */
+  /* subimos el icono para que quede centrado en esa mitad */
+  /* visible, en vez de centrado en el círculo completo    */
 }
 
 .collapse {
@@ -176,13 +198,82 @@ button {
 }
 
 .contact-form-button {
-  align-items: center;
+  align-self: center;
+  
+}
+
+.contact-form-button button{
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  background-color: purple;
+  padding: 0.75rem 2.5rem;
+}
+
+.map {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #6C63FF;
+}
+
+.footer-colum {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0rem 0.5rem;
+}
+
+.footer-title p{
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-button button{
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  background-color: turquoise;
+  padding: 0.75rem 2.5rem;
+}
+
+.form-br {
+  line-height: 2rem;
+}
+
+.footer-links ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 
 
+/* Other modifiers */
 
-
-.map {
+.flex {
   display: flex;
+}
+
+.gap1{
+  gap: 1rem;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.margin-left {
+  margin: 0rem 0rem 0 0.5rem;
+}
+
+.margin-top {
+  margin: 1rem 0rem 0rem 0rem;
 }

@@ -16,7 +16,6 @@ button {
   
 }
 
-
 .purple {
   color: purple;
 }
@@ -26,7 +25,11 @@ button {
 }
 
 .header-menu {
-  background-color: black;
+  /* background-color: black; */
+  background: url(../IMG/banner_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -65,7 +68,11 @@ button {
 }
 
 .banner {
-  background-color: rgb(233, 67, 67);
+  /* background-color: rgb(233, 67, 67); */
+  background: url(../IMG/foto_equipo.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   padding: 9rem 5rem 4rem 5rem;
@@ -83,14 +90,12 @@ button {
   font-size: 3rem;
 }
 
-
 .banner-button button{
   text-align: center;
   color: white;
   border-radius: 100px;
   padding: 0.75rem 2.5rem;
-  background-color:#6C63FF;
-}
+  background-color:#6C63FF;}
 
 .info-cards {
   display: flex;
@@ -98,22 +103,20 @@ button {
   justify-content: center;
   gap: 5rem;
   padding: 2rem;
-  background-color: rgb(230, 233, 67);  
+  background-color: rgb(255, 255, 255);
 }
 
 .info-card {
   width: 360px;
   min-height: 480px;
-  background: rgb(87, 83, 175);
+  background-color: rgb(84, 84, 122);
   border-radius: 22px;
-  padding: 2rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   color: white;
   text-align: center;
-  position: relative;   /* punto de referencia para el botón absoluto */
-  overflow: hidden;      /* recorta el botón que sobresale por abajo */
+  overflow: hidden;
 }
 
 .card-image {
@@ -125,27 +128,24 @@ button {
 }
 
 .card-button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  margin-top: auto;
+  margin-bottom: -2.25rem;
+  align-self: center;
   width: 4.5rem;
   height: 4.5rem;
+  flex-shrink: 0;
   border-radius: 50%;
-  background-color: deeppink;
+  background-color: rgb(255, 101, 125);
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(-50%, 50%);
-  /* translateX(-50%) centra el círculo horizontalmente en la tarjeta */
-  /* translateY(50%) baja el círculo la mitad de su propia altura,   */
-  /* así su centro queda sobre el borde inferior de la tarjeta       */
 }
 
 .card-button svg {
-  transform: translateY(-50%);
-  /* como solo se ve la mitad superior del círculo,       */
-  /* subimos el icono para que quede centrado en esa mitad */
-  /* visible, en vez de centrado en el círculo completo    */
+  width: 20px;
+  height: 20px;
+  fill: rgb(255, 255, 255);
+  transform: translateY(-65%);
 }
 
 .collapse {
@@ -160,7 +160,6 @@ button {
   border-radius: 10px;
 }
 
-
 .collapse-element summary::after {
   content: "▼";
 }
@@ -168,10 +167,11 @@ button {
 /* Format not done */
 
 .contact {
+  margin: 1rem 8rem 1rem 8rem;
   display: flex;
   flex-direction: row;
   border-radius: 24px;
-  box-shadow: 0 25px 60px black;
+  box-shadow: 0 2px 20px black;
   overflow: hidden;
 }
 
